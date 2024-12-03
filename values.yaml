@@ -1,0 +1,15 @@
+replicaCount: 3
+
+image:
+  repository: prostoandre/demo-app
+  tag: latest
+  pullPolicy: Always
+
+service:
+  name: demo-app-service
+  type: NodePort
+  port: 8080
+  targetPort: 8080
+  nodePort: 30080
+
+resources: {}
