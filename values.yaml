@@ -8,9 +8,9 @@ image:
 service:
   name: demo-app-service
   type: NodePort
-  port: 8088
+  port: 8080
   targetPort: 8080
-  nodePort: 30081
+  nodePort: 8088
   
 
 resources: {}
